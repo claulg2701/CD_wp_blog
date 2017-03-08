@@ -1,2 +1,2 @@
-# Blank Template 2017
+# Claudia's Blog
 ###### by Claudia De Leon

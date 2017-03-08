@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Claudia De Leon Blank Template</title>
     <?php wp_head(); ?>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	</head>
 	<body>
