@@ -10,9 +10,10 @@
               <?php the_post_thumbnail('large'); ?>
             </div>
         <?php } ?>
-					<h2><?php the_title(); ?></h2>
-					<?php the_content();
-				endwhile;
+					<h1><?php the_title(); ?></h1>
+					<?php the_content();?>
+          <div class="post-tags"><?php the_tags("","","");?></div>
+				<?php endwhile;
 			endif; ?>
 <!-- End single PHP -->
 		</div>
