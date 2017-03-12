@@ -10,7 +10,7 @@
               <?php the_post_thumbnail('large'); ?>
             </div>
         <?php } ?>
-          <div class="post-padding">
+          <div class="page-padding">
             <h1><?php the_title(); ?></h1>
             <div id="post-info">
               <?php

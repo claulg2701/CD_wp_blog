@@ -1,6 +1,6 @@
       <!-- BEGINNING OF FOOTER - END SECTION CONTENT -->
       <footer class="row">
-        <div class="social-media twelve columns">
+        <div class="outline light-background twelve columns">
           <ul>
             <li class="sm facebook"><a href="https://www.facebook.com/claulg2701/"><i class="fa fa-facebook fa-lg"></i></a></li>
 

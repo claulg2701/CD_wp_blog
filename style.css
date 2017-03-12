@@ -18,6 +18,10 @@ Text Domain: claudia_deleon_blank_template
   font-weight: normal;
 }
 
+.center {
+  text-align: center;
+}
+
 h1 {
   color: #e75425;
   font-weight: 800;
@@ -121,8 +125,8 @@ h5 {
 
 /* Footer */
 
-.social-media {
-  background-color: rgba(158, 158, 158, 0.34);
+.light-background {
+  background-color: rgba(158, 158, 158, 0.08);
 }
 
 footer ul,
@@ -201,11 +205,11 @@ footer p {
 
 /* Post Info */
 
-.outline.row {
+.outline {
   border: 1px solid rgba(158, 158, 158, 0.34);
 }
 
-.post-padding {
+.page-padding {
   padding: 2rem 7rem;
 }
 
