@@ -120,31 +120,81 @@ h5 {
 }
 
 /* Next and Prev Post */
+.post-nav a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .stretch {
-  width: 35%;
+  width: 30%;
   float: left;
-  background-color: blue;
   margin: 0 0 5rem;
-  height: 150px;
+  height: 95px;
+  border: 1px solid rgba(158, 158, 158, 0.34);
+}
+
+.stretch img {
+  width: 100%;
+  min-height: 95px;
 }
 
 .nextPrevContent {
-  width: 45%;
+  width: 50%;
   float: left;
-  background-color: red;
   margin: 0 0 5rem;
-  height: 150px;
+  height: 95px;
+  border-top: 1px solid rgba(158, 158, 158, 0.34);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.34);
+  padding: 0 1em;
+}
+
+.nextPrevContent h5 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.nextPrevContent p {
+  font-size: 14px;
+}
+
+.nextPrevContent h5,
+.nextPrevContent p {
+  margin: 0;
+  line-height: 22px;
 }
 
 .nextPrevArrow {
-  width: 20%;
+  width: calc(20% - 2em - 3px);
   float: left;
-  background-color: green;
   margin: 0 0 5rem;
-  height: 150px;
+  height: 95px;
+  border-top: 1px solid rgba(158, 158, 158, 0.34);
+  border-bottom: 1px solid rgba(158, 158, 158, 0.34);
 }
 
+.nextPrevArrow i.fa.fa-chevron-right {
+  font-size: 5rem;
+  vertical-align: middle;
+  margin: 2rem;
+  float: right;
+  color: #e75425;
+}
+
+.nextPrevArrow i.fa.fa-chevron-left {
+  font-size: 5rem;
+  vertical-align: middle;
+  margin: 2rem;
+  float: left;
+  color: #e75425;
+}
+
+#nextArrow {
+  border-right: 1px solid rgba(158, 158, 158, 0.34);
+}
+
+#prevArrow {
+  border-left: 1px solid rgba(158, 158, 158, 0.34);
+}
 
 .stretch::after,
 ..nextPrevContent::after,

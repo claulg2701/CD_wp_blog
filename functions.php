@@ -51,5 +51,5 @@ add_theme_support('menus');
 
 /*--- Enable Post Thumbnails ---*/
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'nextPrevPost-thumb', 250, 85, true );
+add_image_size( 'nextPrevPost-thumb', 250, 95, true );
 ?>

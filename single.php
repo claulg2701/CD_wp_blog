@@ -25,7 +25,7 @@
               <div class="post-tags"><?php the_tags("","","");?></div>
 
 
-              <div id="cooler-nav" class="navigation">
+              <div class="post-nav">
 
               <?php
               $prevPost = get_previous_post(true);
@@ -41,8 +41,8 @@
                   <h5 class='nextPrevTitle'>%title</h5>
                   <p class='nextPrevEx'>$next_text</p>
                 </div>
-                <div class='nextPrevArrow'>
-                  <p id='nextArrow'><i class='fa fa-chevron-right' aria-hidden='true'></i></p>
+                <div id='nextArrow' class='nextPrevArrow'>
+                  <p><i class='fa fa-chevron-right' aria-hidden='true'></i></p>
                 </div>
                 ", TRUE);
               }
@@ -52,8 +52,8 @@
                 $prev_ex_con = ( $prevPost->post_excerpt ) ? $prevPost->post_excerpt : strip_shortcodes( $prevPost->post_content );
                 $prev_text = wp_trim_words( apply_filters( 'the_excerpt', $prev_ex_con ), 18 );
                 previous_post_link('%link',"
-                <div class='nextPrevArrow'>
-                    <p id='prevArrow'><i class='fa fa-chevron-left' aria-hidden='true'></i></p>
+                <div id='prevArrow' class='nextPrevArrow'>
+                    <p><i class='fa fa-chevron-left' aria-hidden='true'></i></p>
                   </div>
                 <div class='nextPrevContent'>
                   <h5 class='nextPrevTitle'>%title</h5>
