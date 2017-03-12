@@ -33,7 +33,48 @@ h5 {
   font-size: 2.4rem;
 }
 
-/* ------Logo ------*/
+/* ----- Search -------- */
+
+#searchform {
+  margin: 1em;
+  text-align: right;
+}
+
+#searchform div {
+  border: 2px solid #e9e9e9;
+  width: 228px;
+  float: right;
+  right: 16px;
+  border-radius: 50px;
+}
+
+#searchform .screen-reader-text {
+  display: none;
+}
+
+#s {
+  position: relative;
+  background-color: transparent;
+  height: 38px;
+  width: 171px;
+  float: left;
+  border: none;
+}
+
+#searchsubmit {
+  position: relative;
+  width: 45px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+  background-image: url('/mmc6145/wp-content/uploads/2017/03/search-e1489296706283.png');
+}
+
+/* ------Logo ------ */
 
 #cd-logo {
   text-align: center;

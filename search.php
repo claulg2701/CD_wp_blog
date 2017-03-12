@@ -19,9 +19,6 @@ get_header(); ?>
         			<p>Sorry, but nothing matched your search criteria. Please try again with different search terms.</p>
 		<?php } ?>
 	</div>
-	<div class="four columns">
-		<?php get_sidebar(); ?>
-	</div>
 </div>
 
 <?php get_footer(); ?>

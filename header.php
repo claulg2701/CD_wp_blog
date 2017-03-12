@@ -16,7 +16,7 @@
 					<p><?php bloginfo('description'); ?></p>
 				</div>
         <!-- Add Search Form -->
-      	<div class="three columns">
+      	<div class="site-search twelve columns">
       		<?php get_search_form(); ?>
       	</div>
 			</header>
