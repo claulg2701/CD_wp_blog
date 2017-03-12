@@ -31,24 +31,37 @@
               $prevPost = get_previous_post(true);
               $nextPost = get_next_post(true);
 
-              if($prevPost) {?>
-              <div class="nav-box previous">
-              <?php
-                $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'thumbnail', array(100,100));
-                $prevExcert = get_the_excerpt( $prevPost->ID );
-                previous_post_link('%link',"$prevthumbnail  <p>%title</p>", TRUE);
-              ?>
-              </div>
-              <?php }
+              if($nextPost) {
+                $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'nextPrevPost-thumb', array('class' => 'nextPrevLinks'));
+                $next_ex_con = ( $nextPost->post_excerpt ) ? $nextPost->post_excerpt : strip_shortcodes( $nextPost->post_content );
+                $next_text = wp_trim_words( apply_filters( 'the_excerpt', $next_ex_con ), 18 );
+                next_post_link('%link',"
+                <div class='stretch'>$nextthumbnail</div>
+                <div class='nextPrevContent'>
+                  <h5 class='nextPrevTitle'>%title</h5>
+                  <p class='nextPrevEx'>$next_text</p>
+                </div>
+                <div class='nextPrevArrow'>
+                  <p id='nextArrow'><i class='fa fa-chevron-right' aria-hidden='true'></i></p>
+                </div>
+                ", TRUE);
+              }
 
-              if($nextPost) { ?>
-              <div class="nav-box next">
-              <?php
-                $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'thumbnail', array(100,100));
-                next_post_link('%link',"$nextthumbnail  <p>%title</p>", TRUE);
-              ?>
-              </div>
-              <?php } ?>
+              if($prevPost) {
+                $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'nextPrevPost-thumb', array('class' => 'nextPrevLinks'));
+                $prev_ex_con = ( $prevPost->post_excerpt ) ? $prevPost->post_excerpt : strip_shortcodes( $prevPost->post_content );
+                $prev_text = wp_trim_words( apply_filters( 'the_excerpt', $prev_ex_con ), 18 );
+                previous_post_link('%link',"
+                <div class='nextPrevArrow'>
+                    <p id='prevArrow'><i class='fa fa-chevron-left' aria-hidden='true'></i></p>
+                  </div>
+                <div class='nextPrevContent'>
+                  <h5 class='nextPrevTitle'>%title</h5>
+                  <p class='nextPrevEx'>$prev_text</p>
+                </div>
+                <div class='stretch'>$prevthumbnail</div>
+                  ", TRUE);
+              } ?>
 
               </div><!--#cooler-nav div -->
 
