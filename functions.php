@@ -58,8 +58,8 @@ function theme_prefix_setup() {
 	) );
 
 }
-add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
+add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
 /*-------------- Enable Menu --------------- */
 add_theme_support('menus');
