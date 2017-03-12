@@ -380,6 +380,10 @@ footer p {
   font-size: 14px;
 }
 
+.page-navigation i {
+  font-size: 1.5em;
+}
+
 .page-navigation a {
   color: #40b4bc;
 }
