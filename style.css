@@ -63,6 +63,64 @@ h5 {
   color: #cccccc;
 }
 
+/* Footer */
+
+.social-media {
+  background-color: rgba(158, 158, 158, 0.34);
+}
+
+footer ul,
+.copyright {
+  text-align: center;
+  margin: 3rem;
+  font-size: 12px;
+}
+
+footer ul li {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 2px 1px 2px #888888;
+  padding: 6px 13px;
+  color: #e75425;
+}
+
+footer li.googleplus {
+  padding: 5px 8px;
+}
+
+footer li.twitter {
+  padding: 6px 11px;
+}
+
+footer li.facebook {
+  padding: 5px 14px;
+  margin-right: 1rem;
+}
+
+footer ul li + li {
+  margin: 0 1rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+
+footer ul li:hover {
+  text-decoration: none;
+  background-color: #e75425;
+}
+
+footer ul li:hover a {
+  color: #ffffff;
+}
+
+footer p {
+  color: #ccccd4;
+}
+
 /* Post Tags */
 
 .post-tags {
