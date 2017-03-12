@@ -23,8 +23,14 @@
       <!-- end of header | begin section content -->
       <!-- Menu -->
       <div class="row">
-      	<div class="twelve columns">
-      		<?php wp_nav_menu(array(
+      	<div id="cd-logo" class="twelve columns">
+      		<?php
+
+            if ( function_exists( 'the_custom_logo' ) ) {
+              the_custom_logo();
+            }
+
+            wp_nav_menu(array(
       			'sort_column' => 'menu_order',
       			'container_class' => 'blank-menu-header'
       			));?>
