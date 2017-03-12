@@ -12,7 +12,8 @@
         <?php } ?>
           <div class="page-padding">
             <h1><?php the_title(); ?></h1>
-            <div id="post-info">
+
+            <div class="post-info">
               <?php
               $author = get_the_author();;
               echo substr($author, 0,10);
@@ -20,13 +21,13 @@
               the_time('M jS, Y');
               echo "\n\n";
               the_category(' ');?>
-              </div>
-              <?php the_content();?>
-              <div class="post-tags"><?php the_tags("","","");?></div>
+            </div>
 
+            <?php the_content();?>
 
-              <div class="post-nav">
+            <div class="post-tags"><?php the_tags("","","");?></div>
 
+            <div class="post-nav">
               <?php
               $prevPost = get_previous_post(true);
               $nextPost = get_next_post(true);
@@ -63,14 +64,11 @@
                   ", TRUE);
               } ?>
 
-              </div><!--#cooler-nav div -->
-
-
-
-  				   <?php endwhile;
-  			     endif; ?>
+            </div><!--end post nav -->
+          <?php endwhile;
+  			  endif; ?>
           <!-- End single PHP -->
-          </div>
+        </div>
 		</div>
 	</div>
 <?php get_footer(); ?>
