@@ -1,7 +1,7 @@
 # Claudia's Blog
 ###### by Claudia De Leon
 
-* Basic Portfolio Template for WordPress
+* Responsive Portfolio Template for WordPress
 
 * Running at [www.claudia-deleon.com/mmc6145](http://www.claudia-deleon.com/mmc6145).
 
