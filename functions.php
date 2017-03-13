@@ -92,12 +92,12 @@ function current_paged( $var = '' ) {
         return;
     $page = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-    if($page == 1){
+    if($page == 1 && $wp_query->max_num_pages > 1){
       echo '<i class="inactive fa fa-chevron-circle-left fa-lg" aria-hidden="true"></i>&nbsp;&nbsp;Page ' . $page . ' of ' . $pages;
-    }elseif ($page == $wp_query->max_num_pages) {
+    }elseif ($page == $wp_query->max_num_pages && $page > 1) {
       echo 'Page ' . $page . ' of ' . $pages. '&nbsp;&nbsp;<i class="inactive fa fa-chevron-circle-right fa-lg" aria-hidden="true"></i>';
     }else {
-      echo 'Page ' . $page . ' of ' . $pages;
+      echo '';
     }
 }
 
