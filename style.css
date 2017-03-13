@@ -215,26 +215,44 @@ footer p {
 }
 
 .home-post {
-  padding: 2em 7em;
+  padding: 1em;
   clear: both;
+  text-align: center;
+  margin: 0 auto;
 }
+
+.post-img {
+  margin-right: 3%;
+  width: 300px;
+  height: 100%;
+}
+
+@media ( min-width: 960px ) {
+  .home-post {
+    padding: 2em 5em;
+    clear: both;
+  }
+
+  .post-img {
+    width: 20%;
+    float: left;
+  }
+
+  .post-summary {
+    width: 77%;
+    float: left;
+    text-align: left;
+  }
+}
+
+
 
 .home-post a,
 .home-post a:hover {
   text-decoration: none;
 }
 
-.post-img {
-  width: 20%;
-  float: left;
-  margin-right: 3%;
-}
 
-.post-summary {
-  width: 77%;
-  float: left;
-  text-align: left;
-}
 
 .post-summary::after,
 .post-img::after {
