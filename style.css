@@ -193,6 +193,52 @@ footer p {
   color: #ccccd4;
 }
 
+/* ------ Index ------- */
+
+.home-banner {
+  background: url("/mmc6145/wp-content/uploads/2017/01/about-blogger-768x237.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 337px;
+}
+
+.home-post {
+  padding: 2em 7em;
+  clear: both;
+}
+
+.post-img {
+  width: 20%;
+  float: left;
+  margin-right: 3%;
+}
+
+.post-summary {
+  width: 77%;
+  float: left;
+  text-align: left;
+}
+
+.post-summary::after,
+.post-img::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.post-summary h5 {
+  margin-bottom: 0;
+}
+
+.home.post-info {
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+}
+
 /* Post Tags */
 
 .post-tags {
@@ -354,7 +400,8 @@ footer p {
   clear: both;
 }
 
-.cat.summary img {
+.cat.summary img,
+.home.post-info {
   border-bottom: 3px solid #e75425;
 }
 
