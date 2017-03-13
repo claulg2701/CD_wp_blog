@@ -68,6 +68,11 @@ h6 {
   border-radius: 50px;
 }
 
+#searchform div:hover {
+  border: 1px solid #e9e9e9;
+}
+
+
 #searchform .screen-reader-text {
   display: none;
 }
@@ -662,4 +667,11 @@ p img {
 
 .inactive {
   color: rgb(158, 158, 158);
+}
+
+/* Related pages */
+
+.related {
+  padding: 0 2em;
+  text-transform: none;
 }
