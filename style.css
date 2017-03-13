@@ -434,6 +434,13 @@ input:-moz-placeholder {
 
 /* Post Info */
 
+/* --- images inside posts --- */
+
+p img {
+  width: 100%;
+  max-width: 525px;
+}
+
 .outline {
   border: 1px solid rgba(158, 158, 158, 0.34);
 }
@@ -491,7 +498,7 @@ input:-moz-placeholder {
   width: 30%;
   float: left;
   margin: 0 0 5rem;
-  height: 95px;
+  height: 100px;
   border: 1px solid rgba(158, 158, 158, 0.34);
 }
 
@@ -504,15 +511,40 @@ input:-moz-placeholder {
   width: 50%;
   float: left;
   margin: 0 0 5rem;
-  height: 95px;
+  height: 100px;
   border-top: 1px solid rgba(158, 158, 158, 0.34);
   border-bottom: 1px solid rgba(158, 158, 158, 0.34);
   padding: 0 1em;
 }
 
 .nextPrevContent h5 {
-  font-size: 2rem;
-  padding: 1rem 0;
+  font-size: 1em;
+  padding: 1rem;
+}
+
+.float {
+  text-align: right;
+}
+
+
+.nextPrevContent .nextPrevEx {
+  display: none;
+}
+
+@media ( min-width: 800px ) {
+  .nextPrevContent h5 {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  .nextPrevContent .nextPrevEx {
+    display: block;
+  }
+
+  .float {
+    text-align: left;
+  }
+
 }
 
 .nextPrevContent p {
@@ -522,14 +554,14 @@ input:-moz-placeholder {
 .nextPrevContent h5,
 .nextPrevContent p {
   margin: 0;
-  line-height: 22px;
+  line-height: 2rem;
 }
 
 .nextPrevArrow {
   width: calc(20% - 2em - 3px);
   float: left;
   margin: 0 0 5rem;
-  height: 95px;
+  height: 100px;
   border-top: 1px solid rgba(158, 158, 158, 0.34);
   border-bottom: 1px solid rgba(158, 158, 158, 0.34);
 }

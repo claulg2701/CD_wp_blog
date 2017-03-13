@@ -59,7 +59,7 @@
                     <p><i class='fa fa-chevron-left' aria-hidden='true'></i></p>
                   </div>
                 <div class='nextPrevContent'>
-                  <h5 class='nextPrevTitle'>%title</h5>
+                  <h5 class='float nextPrevTitle'>%title</h5>
                   <p class='nextPrevEx'>$prev_text</p>
                 </div>
                 <div class='stretch' style='background-image:url($prevpost_thumbnail_url);'></div>
