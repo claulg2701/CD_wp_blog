@@ -33,11 +33,12 @@
               $nextPost = get_next_post(true);
 
               if($nextPost) {
-                $nextthumbnail = get_the_post_thumbnail($nextPost->ID, 'nextPrevPost-thumb', array('class' => 'nextPrevLinks'));
+                $nextpost_thumbnail_id = get_post_thumbnail_id($nextPost->ID);
+                $nextpost_thumbnail_url = wp_get_attachment_url( $nextpost_thumbnail_id );
                 $next_ex_con = ( $nextPost->post_excerpt ) ? $nextPost->post_excerpt : strip_shortcodes( $nextPost->post_content );
-                $next_text = wp_trim_words( apply_filters( 'the_excerpt', $next_ex_con ), 18 );
+                $next_text = wp_trim_words( apply_filters( 'the_excerpt', $next_ex_con ), 15 );
                 next_post_link('%link',"
-                <div class='stretch'>$nextthumbnail</div>
+                <div class='stretch' style='background-image:url($nextpost_thumbnail_url);'></div>
                 <div class='nextPrevContent'>
                   <h5 class='nextPrevTitle'>%title</h5>
                   <p class='nextPrevEx'>$next_text</p>
@@ -49,9 +50,10 @@
               }
 
               if($prevPost) {
-                $prevthumbnail = get_the_post_thumbnail($prevPost->ID, 'nextPrevPost-thumb', array('class' => 'nextPrevLinks'));
+                $prevpost_thumbnail_id = get_post_thumbnail_id($prevPost->ID);
+                $prevpost_thumbnail_url = wp_get_attachment_url( $prevpost_thumbnail_id );
                 $prev_ex_con = ( $prevPost->post_excerpt ) ? $prevPost->post_excerpt : strip_shortcodes( $prevPost->post_content );
-                $prev_text = wp_trim_words( apply_filters( 'the_excerpt', $prev_ex_con ), 18 );
+                $prev_text = wp_trim_words( apply_filters( 'the_excerpt', $prev_ex_con ), 15 );
                 previous_post_link('%link',"
                 <div id='prevArrow' class='nextPrevArrow'>
                     <p><i class='fa fa-chevron-left' aria-hidden='true'></i></p>
@@ -60,7 +62,7 @@
                   <h5 class='nextPrevTitle'>%title</h5>
                   <p class='nextPrevEx'>$prev_text</p>
                 </div>
-                <div class='stretch'>$prevthumbnail</div>
+                <div class='stretch' style='background-image:url($prevpost_thumbnail_url);'></div>
                   ", TRUE);
               } ?>
 

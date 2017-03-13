@@ -215,7 +215,7 @@ footer p {
 }
 
 .home-post {
-  padding: 1em;
+  padding: 2rem 5rem;
   clear: both;
   text-align: center;
   margin: 0 auto;
@@ -232,10 +232,6 @@ footer p {
 }
 
 @media ( min-width: 960px ) {
-  .home-post {
-    padding: 2em 5em;
-    clear: both;
-  }
 
   .post-img {
     width: 20%;
@@ -243,7 +239,7 @@ footer p {
   }
 
   .post-summary {
-    width: 77%;
+    width: calc(77% - 10rem);
     float: left;
     text-align: left;
   }
@@ -444,6 +440,7 @@ input:-moz-placeholder {
 
 .page-padding {
   margin: 0 auto;
+  padding: 2rem;
 }
 
 @media ( min-width: 960px ) {
@@ -454,6 +451,7 @@ input:-moz-placeholder {
 
 .post-thumbnail img {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   max-height: 280px;
 }
@@ -485,6 +483,11 @@ input:-moz-placeholder {
 }
 
 .stretch {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto;
   width: 30%;
   float: left;
   margin: 0 0 5rem;
