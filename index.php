@@ -35,14 +35,23 @@
       <!--End loop-->
     </div> <!--end home twelve columns-->
   </section>
-  <div class="row">
-    <div class="twelve columns">
-      <?php
-      $aboutMe = get_page_by_title('Hello WordPress!', OBJECT, 'post');
-      echo apply_filters( 'the_title', $aboutMe->post_title );
-      echo apply_filters( 'the_content', $aboutMe->post_content );
-      ?>
-    </div>
+  <div class="row about outline light-background">
+      <div class="four columns claudia-deleon">
+        <img src="/mmc6145/wp-content/uploads/2017/03/claudia-deleon.png" alt="">
+      </div>
+      <div class="eight columns">
+        <p id="about-claudia">
+          <?php
+          $aboutMe = get_page_by_title('Hello WordPress!', OBJECT, 'post');?>
+          <span class="orange-txt"> <?php echo apply_filters( 'the_title', $aboutMe->post_title ).' ';?></span>
+          <?php echo wp_trim_words(apply_filters( 'the_content', $aboutMe->post_content ), 59, '..');
+          ?>
+        </p>
+        <a class="button" href="<?php echo get_permalink($aboutMe->ID); ?>">Continue Reading</a>
+      </div>
+  </div>
+  <div class = "twelve columns">
+    <?php get_sidebar(); ?>
   </div>
 
 <?php get_footer(); ?>

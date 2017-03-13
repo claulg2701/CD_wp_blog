@@ -22,6 +22,10 @@ Text Domain: claudia_deleon_blank_template
   text-align: center;
 }
 
+.orange-txt {
+  color: #e75425;
+}
+
 h1 {
   color: #e75425;
   font-weight: 800;
@@ -243,6 +247,33 @@ footer p {
   margin-bottom: 0.5em;
   padding-bottom: 0;
 }
+
+/* ------ About Me -------- */
+
+.claudia-deleon img {
+  width: 100%;
+  max-width: 300px;
+}
+
+a.button {
+  margin: 1em;
+  background-color: #e75425;
+  color: #ffffff;
+}
+
+a.button:hover {
+  color: #ffffff;
+}
+
+#about-claudia {
+  margin: 0 1em;
+  line-height: 32px;
+}
+
+.row.about {
+  padding: 3em;
+}
+
 
 /* Post Tags */
 
