@@ -55,12 +55,12 @@ h6 {
 
 /* ----- Search -------- */
 
-#searchform {
+.searchform {
   margin: 1em;
   text-align: right;
 }
 
-#searchform div {
+.searchform div {
   border: 2px solid #e9e9e9;
   width: 228px;
   float: right;
@@ -68,12 +68,7 @@ h6 {
   border-radius: 50px;
 }
 
-#searchform div:hover {
-  border: 1px solid #e9e9e9;
-}
-
-
-#searchform .screen-reader-text {
+.searchform .screen-reader-text {
   display: none;
 }
 
@@ -89,6 +84,7 @@ h6 {
 #searchsubmit {
   position: relative;
   width: 45px;
+  height: 36px;
   padding: 0;
   margin: 0;
   float: left;
@@ -96,7 +92,7 @@ h6 {
   border: none;
   background-color: transparent;
   color: transparent;
-  background-image: url('/mmc6145/wp-content/uploads/2017/03/search-e1489296706283.png');
+  background-image: url('/mmc6145/wp-content/uploads/2017/03/search-1.png');
 }
 
 /* ------Logo ------ */
