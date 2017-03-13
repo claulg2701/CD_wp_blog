@@ -211,6 +211,11 @@ footer p {
   clear: both;
 }
 
+.home-post a,
+.home-post a:hover {
+  text-decoration: none;
+}
+
 .post-img {
   width: 20%;
   float: left;

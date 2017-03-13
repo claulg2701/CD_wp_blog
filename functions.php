@@ -101,4 +101,6 @@ function current_paged( $var = '' ) {
     }
 }
 
+/* --------- Load more post on Index Page ---------- */
+
 ?>
