@@ -6,7 +6,7 @@
       <!--Begin loop-->
       <?php query_posts( array(
                          'post_type' => 'post',
-                         'posts_per_page' => -1 )
+                         'posts_per_page' => 4 )
                        );
         ?>
         <?php if ( have_posts() ) {
@@ -33,6 +33,10 @@
                     <?php } // end while
                   } // end if ?>
       <!--End loop-->
+        <div class="view-category">
+            <?php $getCategory = get_cat_ID( 'Web Interactivity' );;?>
+            <a id="toCategory" href="<?php echo get_category_link( $getCategory ); ?>">More</a>
+        </div>
     </div> <!--end home twelve columns-->
   </section>
   <div class="row about outline light-background">

@@ -199,6 +199,10 @@ footer p {
 
 /* ------ Index ------- */
 
+.home.twelve.columns {
+  padding-bottom: 2em;
+}
+
 .home-banner {
   background: url("/mmc6145/wp-content/uploads/2017/01/about-blogger-768x237.png") no-repeat center;
   -webkit-background-size: cover;
@@ -246,6 +250,30 @@ footer p {
 .home.post-info {
   margin-bottom: 0.5em;
   padding-bottom: 0;
+}
+
+.view-category {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  padding: 4em 0;
+  cursor: pointer;
+}
+
+#toCategory {
+  border: 2px solid #e75425;
+  border-radius: 50%;
+  padding: 1.5em 1em;
+  font-size: 14px;
+  text-decoration: none;
+  color: #e75425;
+}
+
+a#toCategory:hover {
+  background-color: #e75425;
+  color: #ffffff;
 }
 
 /* ------ About Me -------- */
