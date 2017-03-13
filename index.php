@@ -50,7 +50,7 @@
         <a class="button" href="<?php echo get_permalink($aboutMe->ID); ?>">Continue Reading</a>
       </div>
   </div>
-  <div class = "twelve columns">
+  <div id="contact-form" class = "outline twelve columns">
     <?php get_sidebar(); ?>
   </div>
 
